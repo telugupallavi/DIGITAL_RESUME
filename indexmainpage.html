@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telugu Pallavi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        
+        /* Requirement: Animated Hero Background (Sujit Kumar inspired) */
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: rgba(79, 70, 229, 0.15);
+            filter: blur(80px);
+            border-radius: 50%;
+            z-index: -1;
+            animation: move 20s infinite alternate;
+        }
+        @keyframes move {
+            from { transform: translate(-10%, -10%); }
+            to { transform: translate(20%, 20%); }
+        }
+
+        /* Requirement: Hover Zoom for Gallery */
+        .gallery-card img { transition: all 0.5s ease; }
+        .gallery-card:hover img { transform: scale(1.1); }
+        
+        .text-gradient {
+            background: linear-gradient(to right, #6366f1, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 overflow-x-hidden">
+
+    <header class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter text-white">Home</div>
+            <ul class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-slate-400">
+                <li><a href="#about" class="hover:text-indigo-400 transition">About</a></li>
+                <li><a href="#skills" class="hover:text-indigo-400 transition">Skills</a></li>
+                <li><a href="#projects" class="hover:text-indigo-400 transition">Projects</a></li>
+                <li><a href="#gallery" class="hover:text-indigo-400 transition">Gallery</a></li>
+                <li><a href="#contact" class="hover:text-indigo-400 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="relative min-h-screen flex items-center pt-20">
+        <div class="blob top-0 left-0"></div>
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div data-aos="fade-right">
+                <p class="text-indigo-400 font-mono mb-4">Welcome to My Professional Portfolio</p>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">
+    I'm <span class="text-gradient">Telugu Pallavi</span>
+</h1>
+   
+                <p class="text-lg text-slate-400 leading-relaxed mb-8 max-w-xl">
+                    AI Undergraduate & Frontend Innovator dedicated to bridging the gap between 
+                    <strong>complex machine learning logic</strong> and <strong>seamless user experiences</strong>. 
+                    Proficient in building responsive, AI-powered applications that prioritize user-centric design.
+                </p>
+
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800">
+                        <p class="text-xs text-indigo-400 font-bold uppercase">Current Role</p>
+                        <p class="text-white text-sm">AI Undergraduate | Aspiring Frontend Developer</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800">
+                        <p class="text-xs text-indigo-400 font-bold uppercase">Areas Of Interest</p>
+                        <p class="text-white text-sm">AI & Machine Learning, Full Stack Development, UI/UX Design, Data Analytics, Learning New Technologies</p>
+                    </div>
+                </div>
+            </div>
+
+          <div class="flex justify-center" data-aos="zoom-in"> <div class="relative w-80 h-80 bg-slate-900 rounded-full border-2 border-indigo-500/30 flex items-center justify-center p-8"> <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Pallavi" alt="Avatar" class="w-full h-full drop-shadow-2xl"> </div> </div>
+</div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-slate-900/30">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-16" data-aos="fade-up">Technical Arsenal</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="p-8 bg-slate-950 rounded-2xl border border-slate-800" data-aos="flip-left">
+                    <p class="text-indigo-400 font-bold">Programming Languages</p>
+                    <p class="text-sm mt-2 text-slate-400">Java, Python , AI/ML</p>
+                </div>
+                <div class="p-8 bg-slate-950 rounded-2xl border border-slate-800" data-aos="flip-left" data-aos-delay="100">
+                    <p class="text-indigo-400 font-bold">Web Development</p>
+                    <p class="text-sm mt-2 text-slate-400">HTML5, CSS3, JavaScript</p>
+                </div>
+                
+                <div class="p-8 bg-slate-950 rounded-2xl border border-slate-800" data-aos="flip-left" data-aos-delay="300">
+                    <p class="text-indigo-400 font-bold">Tools</p>
+                    <p class="text-sm mt-2 text-slate-400">Git, VS Code</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-16 text-center" data-aos="fade-up">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800" data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-indigo-400 mb-2">AI Chatbot for College Queries</h3>
+                    <p class="text-slate-400 text-sm mb-4">NLP, Flask, Python</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Automated responses to student queries using NLP and a Flask backend for real-time interaction.</p>
+                </div>
+                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold text-indigo-400 mb-2">Hotel Management Web Page</h3>
+                    <p class="text-slate-400 text-sm mb-4">HTML, CSS styling</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Created a visually engaging menu interface with specialized background image styling and branding.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="gallery" class="py-24 bg-slate-900/20">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-white mb-16" data-aos="fade-up">
+      Inspirations & Hobbies
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+ <!-- Card 1 -->
+         <div class="group relative overflow-hidden rounded-3xl shadow-xl h-80" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+             alt="Creative UI Design">
+
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+          <div class="text-white text-center px-4">
+            <h3 class="text-xl font-semibold">UI Design & Creativity</h3>
+            <p class="text-sm mt-2 opacity-90">
+              Crafting clean layouts, typography & visual balance
+            </p>
+          </div>
+        </div>
+      </div>
+      
+     
+      <!-- Card 2 -->
+      <div class="group relative overflow-hidden rounded-3xl shadow-xl h-80" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+             alt="Frontend Development">
+
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+          <div class="text-white text-center px-4">
+            <h3 class="text-xl font-semibold">Frontend Development</h3>
+            <p class="text-sm mt-2 opacity-90">
+              Building responsive & interactive user interfaces
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+       
+      <div class="group relative overflow-hidden rounded-3xl shadow-xl h-80" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+             class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+             alt="AI & Logical Thinking">
+
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+          <div class="text-white text-center px-4">
+            <h3 class="text-xl font-semibold">AI & Problem Solving</h3>
+            <p class="text-sm mt-2 opacity-90">
+              Exploring logic, patterns & intelligent interfaces
+            </p>
+          </div>
+        </div>
+      </div>
+
+     
+
+    </div>
+  </div>
+</section>
+
+
+
+<footer id="contact" class="py-20 bg-slate-900 border-t border-slate-800">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4" data-aos="fade-up">Get In Touch</h2>
+        <p class="text-slate-400 mb-8 max-w-md mx-auto" data-aos="fade-up">
+            Currently open for AI Internships and Frontend collaborations. Let's discuss how I can contribute to your next digital solution.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-6 mb-12" data-aos="fade-up">
+            <a href="mailto:telugupallavi14@gmail.com" class="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-xl transition shadow-lg shadow-indigo-500/20">
+                <span>telugupallavi14@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/telugupallavi14" target="_blank" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-xl border border-slate-700 transition">
+                <span>LinkedIn</span>
+            </a>
+           <a 
+  href="https://drive.google.com/file/d/1B69wi7Da-gALDLld2lCq_fuyhWRfwh7j/view?usp=drivesdk"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="flex items-center gap-2 border border-indigo-500 text-indigo-500 
+         hover:bg-indigo-500 hover:text-white px-6 py-3 
+         rounded-xl transition duration-300 font-medium"
+>
+  <span>Download Resume</span>
+</a>
+
+        </div>
+
+        <div class="text-slate-500 text-xs uppercase tracking-widest">
+            Kurnool, AP, India | +91 8106675014
+        </div>
+    </div>
+</footer>
+    <script>
+        // Initialize AOS animations (Requirement #5)
+        AOS.init({ duration: 1000, once: true, easing: 'ease-in-out' });
+    </script>
+</body>
+</html>
