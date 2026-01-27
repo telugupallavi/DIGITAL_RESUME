@@ -29,10 +29,3 @@ The site demonstrates responsive design, interactive elements, and creative moti
 - **Frameworks & Libraries:** TailwindCSS, AOS (Animate on Scroll)  
 - **Tools:** VS Code, Git, GitHub, DiceBear (for avatar)  
 
----
-
-## Installation / Local Setup
-1. Clone the repository:
-```bash
-git clone https://github.com/telugupallavi/DIGITAL_RESUME.git
-
